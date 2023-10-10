@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
     },
 
     botaoRegister: {
-        backgroundColor: '#D0ADDA',
+        backgroundColor: '#319997',
         width: '48%',
         height: '45px',
         alignItems: 'center',

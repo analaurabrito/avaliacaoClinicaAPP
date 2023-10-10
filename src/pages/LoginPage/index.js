@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput, Link } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput } from 'react-native';
 import styles from './styles';
-import { NavigationContainer } from '@react-navigation/native';
+import { Link, NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
@@ -11,7 +11,7 @@ export default function LoginPage() {
       <View style={styles.card}>
         <View style={styles.cabecalho}>
           <Text style={styles.textoCabecalho}>MedCenter</Text>
-          <Image style={styles.image} source={require('../../../assets/item1.jpg')}></Image>
+          <Image style={styles.image} source={require('../../../assets/logo.png')}></Image>
         </View>
         <View style={styles.content}>
           <Text style={styles.titulo}>Bem Vindo!</Text>
@@ -22,10 +22,10 @@ export default function LoginPage() {
           
           <View style={styles.botoes}>
               <TouchableOpacity style={styles.botaoLogin}>
-                  <Text style={styles.textoBotao}>Login</Text>
+                <Link to={{screen: 'MainPage'}} style={styles.textoBotao}>Login </Link>
               </TouchableOpacity>
               <TouchableOpacity style={styles.botaoRegister}>
-                  <Text style={styles.textoBotao}>Cadastre-se</Text>
+                  <Link to={{screen: 'RegisterPage'}} style={styles.textoBotao}>Cadastre-se</Link>
               </TouchableOpacity>
           </View>
         </View>

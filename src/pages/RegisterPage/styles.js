@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
     },
 
     botaoRegister: {
-        backgroundColor: '#D0ADDA',
+        backgroundColor: '#319997',
         width: '75%',
         height: '45px',
         alignItems: 'center',
